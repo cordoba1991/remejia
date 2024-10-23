@@ -167,3 +167,12 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+/* Estilos para el logo */
+.logo {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: 1rem; /* Espacio entre el logo y el texto */
+    display: inline-block; /* Asegura que el logo se alinee correctamente con el texto */
+    vertical-align: middle; /* Alinea verticalmente el logo con el texto */
+}
