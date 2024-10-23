@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Remejia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fondo-imagen">
+        <div class="contenido-principal">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <h1 class="encabezado-bienvenida">Contacto</h1>
+            
+            <section id="contenido-contacto">
+                <h2>Ponte en contacto conmigo</h2>
+                <div class="info-contacto">
+                    <p><strong>Email:</strong> <input type="email" id="email-contacto" placeholder="Tu email"></p>
+                    <p><strong>Teléfono:</strong> <input type="tel" id="telefono-contacto" placeholder="Tu número de teléfono"></p>
+                </div>
+                <div class="formulario-contacto">
+                    <h2>Envíanos un mensaje</h2>
+                    <form id="formulario-mensaje" action="enviar_mensaje.php" method="POST">
+                        <div class="campo-formulario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="campo-formulario">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="campo-formulario">
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div class="campo-formulario">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </section>
+            
+            <footer>
+                <p>&copy; <span id="año-actual"></span> Remejia. Todos los derechos reservados.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

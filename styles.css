@@ -1,0 +1,169 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.fondo-imagen {
+    background-image: url('./img/fondo_1.png');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contenido-principal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: 2rem 0;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    color: black;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+/* Estilos para la página Sobre Mí */
+#contenido-sobre-mi {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    color: #333;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+.info-personal h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.info-personal p {
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+.biografia, .habilidades, .experiencia {
+    margin-bottom: 2rem;
+}
+
+.habilidades ul, .experiencia ul {
+    padding-left: 1.5rem;
+}
+
+.experiencia li {
+    margin-bottom: 1rem;
+}
+
+.experiencia h4 {
+    margin: 0;
+}
+/* Estilos para la página de Contacto */
+#contenido-contacto {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    color: #333;
+}
+
+.info-contacto {
+    margin-bottom: 2rem;
+}
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-formulario {
+    margin-bottom: 1rem;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.campo-formulario textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
