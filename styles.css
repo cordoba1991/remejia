@@ -176,3 +176,41 @@ button[type="submit"]:hover {
     display: inline-block; /* Asegura que el logo se alinee correctamente con el texto */
     vertical-align: middle; /* Alinea verticalmente el logo con el texto */
 }
+
+header {
+    background-color: rgba(0, 0, 0, 0.196); /* Fondo semi-transparente */
+    padding: 0rem; /* Espaciado interno */
+}
+
+nav {
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between; /* Espacio entre logo y menú */
+}
+
+nav .logo {
+    width: 35px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: 1rem; /* Espacio entre el logo y el texto */
+}
+
+nav ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+    display: flex; /* Usar flexbox para el menú */
+}
+
+nav ul li {
+    margin: 0 1rem; /* Espacio entre los elementos del menú */
+}
+
+nav ul li a {
+    color: wheat; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
