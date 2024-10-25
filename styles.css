@@ -25,33 +25,40 @@ body, html {
     justify-content: space-between;
     color: white;
 }
-
 nav {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa el logo y la lista */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0,8);
+}
+
+nav .logo {
+    max-width: 150px; /* Tamaño de la imagen del logo */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center;
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin-left: 20px; /* Espacio entre los enlaces */
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
 }
 
 h1 {
     text-align: center;
     font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 2rem 0;
 }
 
@@ -69,6 +76,7 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
 /* Estilos para la página Sobre Mí */
 #contenido-sobre-mi {
     background-color: rgba(255, 255, 255, 0.9);
@@ -116,14 +124,15 @@ footer {
 .experiencia h4 {
     margin: 0;
 }
+
 /* Estilos para la página de Contacto */
 #contenido-contacto {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 10px;
-    color: #333;
+    color: #333; 
+    margin-top: -4rem; /* Añadido para subir el contenido */
 }
-
 .info-contacto {
     margin-bottom: 2rem;
 }
@@ -170,47 +179,7 @@ button[type="submit"]:hover {
 
 /* Estilos para el logo */
 .logo {
-    width: 100px; /* Ajusta el tamaño según sea necesario */
+    width: auto; /* Ajusta el tamaño según sea necesario */
     height: auto; /* Mantiene la proporción del logo */
     margin-right: 1rem; /* Espacio entre el logo y el texto */
-    display: inline-block; /* Asegura que el logo se alinee correctamente con el texto */
-    vertical-align: middle; /* Alinea verticalmente el logo con el texto */
-}
-
-header {
-    background-color: rgba(0, 0, 0, 0.196); /* Fondo semi-transparente */
-    padding: 0rem; /* Espaciado interno */
-}
-
-nav {
-    display: flex; /* Usar flexbox para alinear elementos */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: space-between; /* Espacio entre logo y menú */
-}
-
-nav .logo {
-    width: 35px; /* Ajusta el tamaño según sea necesario */
-    height: auto; /* Mantiene la proporción del logo */
-    margin-right: 1rem; /* Espacio entre el logo y el texto */
-}
-
-nav ul {
-    list-style-type: none; /* Sin viñetas */
-    padding: 0; /* Sin padding */
-    margin: 0; /* Sin margen */
-    display: flex; /* Usar flexbox para el menú */
-}
-
-nav ul li {
-    margin: 0 1rem; /* Espacio entre los elementos del menú */
-}
-
-nav ul li a {
-    color: wheat; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    font-weight: bold; /* Texto en negrita */
-}
-
-nav ul li a:hover {
-    text-decoration: underline; /* Subrayar al pasar el mouse */
 }

@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Define el idioma del documento como español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remejia</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Remejia</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS para aplicar estilos -->
 </head>
 <body>
     <div class="fondo-imagen">
         <div class="contenido-principal">
-            <header>
-                <nav>
-                    <img src="./img/logo_2.png" alt="Logo" class="logo"> <!-- Logo -->
-                    <ul>
-                        <li><a href="index.html">Volver</a></li>
-                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <nav> <!-- Contenedor único para la barra de navegación -->
+                <img src="./img/logo_2.png" alt="Logo" class="logo">
+                <ul> <!-- Lista de enlaces de navegación -->
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>            
+            <h1 class="encabezado-bienvenida">Remejia</h1> <!-- Encabezado principal de la página -->
             
-            <h1 class="encabezado-bienvenida">Bienvenido a Remejia</h1>
-            
-            <section id="home">
-                <p>Este es el contenido principal de la página de bienvenida.</p>
+            <section id="contenido-inicio"> <!-- Sección para el contenido de inicio -->
+                <h2>Bienvenido a la página de Remejia</h2> <!-- Subtítulo de bienvenida -->
+                <p>Aquí puedes añadir el contenido específico para la sección de inicio.</p> <!-- Texto descriptivo -->
+                <p>Por ejemplo:</p> <!-- Texto adicional para indicar que se puede añadir más contenido -->
             </section>
             
-            <footer>
-                <p>&copy; <span id="año-actual"></span> Remejia. Todos los derechos reservados.</p>
+            <footer> <!-- Pie de página -->
+                <p>&copy; <span id="año-actual"></span> Remejia. Todos los derechos reservados.</p> <!-- Texto de derechos de autor -->
             </footer>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Enlaza el archivo JavaScript para funcionalidades adicionales -->
 </body>
 </html>
