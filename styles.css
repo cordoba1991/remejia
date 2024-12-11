@@ -13,6 +13,11 @@ body, html {
     background-size: cover;
     position: relative;
 }
+.ajuste-imagen {
+    width: 1em; /* Ajusta el tamaño según el tamaño de la fuente */
+    height: auto; /* Mantiene la proporción de la imagen */
+    vertical-align: middle; /* Alinea la imagen con el texto */
+}
 
 .contenido-principal {
     position: absolute;

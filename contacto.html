@@ -19,32 +19,37 @@
                 </ul>
             </nav>  
             <section id="contenido-contacto">
-                <h2>Ponte en contacto conmigo</h2>
+                <h2>Ponte en contacto con nosotros</h2>
+                <p>Encuentra aquí nuestras principales formas de contacto. Estamos para atenderte.</p>
                 <div class="info-contacto">
-                    <p><strong>Email:</strong> <input type="email" id="email-contacto" placeholder="Tu email"></p>
-                    <p><strong>Teléfono:</strong> <input type="tel" id="telefono-contacto" placeholder="Tu número de teléfono"></p>
-                </div>
-                <div class="formulario-contacto">
-                    <h2>Envíanos un mensaje</h2>
-                    <form id="formulario-mensaje" action="enviar_mensaje.php" method="POST">
-                        <div class="campo-formulario">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="campo-formulario">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="campo-formulario">
-                            <label for="asunto">Asunto:</label>
-                            <input type="text" id="asunto" name="asunto" required>
-                        </div>
-                        <div class="campo-formulario">
-                            <label for="mensaje">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                        </div>
-                        <button type="submit">Enviar mensaje</button>
-                    </form>
+                    <div class="contacto-item">
+                        <h3>WhatsApp</h3>
+                        <p>
+                            <a href="https://wa.me/3012824666" target="_blank">
+                                <img src="./img/logo watssa.png" alt="WhatsApp" class="icono-contacto ajuste-imagen">
+                                Escríbenos por WhatsApp
+                            </a>
+                            
+                        </p>
+                    </div>
+                    <div class="contacto-item">
+                        <h3>Facebook</h3>
+                        <p>
+                            <a href="https://www.facebook.com/Reencauchadora.Mejia@hotmail.com" target="_blank">
+                                <img src="./img/logo facebook.png" alt="Facebook" class="icono-contacto ajuste-imagen">
+                                Visítanos en Facebook
+                            </a>
+                        </p>
+                    </div>
+                    <div class="contacto-item">
+                        <h3>Instagram</h3>
+                        <p>
+                            <a href="https://www.instagram.com/reencauchadoramejia" target="_blank">
+                                <img src="./img/instagram.png" alt="Instagram" class="icono-contacto ajuste-imagen">
+                                Síguenos en Instagram
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </section>
             
@@ -54,6 +59,10 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Script para actualizar automáticamente el año actual en el footer
+        document.getElementById("año-actual").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
+
